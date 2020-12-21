@@ -1,0 +1,83 @@
+$mw-width: 1200px;
+
+* {
+  margin: 0;
+  word-wrap: break-word;
+  padding: 0 auto;
+  box-sizing: border-box;
+  text-align: center;
+  font-family: "Merienda One";
+
+  // overflow: hidden;
+}
+html {
+  background: white;
+  color: black;
+  scroll-behavior: smooth;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+section {
+  border-bottom: 2px dotted black;
+}
+
+.container {
+  min-height: 100vh;
+  padding: 20px;
+  width: 100%;
+  @include flex(center, center);
+}
+h1 {
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.section-heading {
+  margin-bottom: 20px;
+}
+.cbtn {
+  display: inline-block;
+  padding: 10px 30px;
+  @include font(crimson, 1rem, bold);
+  text-transform: uppercase;
+  margin: 20px 0;
+  background-color: transparent;
+  border: 2px solid crimson;
+  transition: 0.3s ease-in;
+  transition-property: backgrond-color, color;
+  &:hover {
+    color: white;
+    background-color: crimson;
+  }
+}
+.fahomeicons {
+  margin: 20px;
+  display: inline-block;
+  @include font(crimson, 1rem, bold);
+  text-transform: uppercase;
+  background-color: transparent;
+  transition: 0.3s ease-in;
+  border-radius: 100%;
+  transition-property: backgrond-color, color;
+  &:hover {
+    color: white;
+    background-color: crimson;
+  }
+}
+span {
+  color: crimson;
+}
+.faiconsglobal {
+  color: crimson;
+}

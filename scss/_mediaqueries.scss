@@ -1,0 +1,130 @@
+@media (min-width: 768px) {
+  #service {
+    .service {
+      .service-items {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        .service-item {
+          flex-basis: 45%;
+          width: 45%;
+          margin: 0.5%;
+        }
+      }
+    }
+  }
+  #recent {
+    .recent {
+      margin-bottom: 20px;
+
+      .recent-items {
+        .recent-item {
+          border-radius: 0;
+          flex-direction: row;
+          width: 100%;
+          overflow: hidden;
+          &:nth-child(even) {
+            flex-direction: row-reverse;
+          }
+          .recent-left {
+            width: 40%;
+            overflow: hidden;
+            flex-basis: 50%;
+            height: 300px;
+          }
+          .recent-right {
+            flex-basis: 50%;
+            display: inline-block;
+            width: 50%;
+          }
+        }
+      }
+    }
+  }
+  #about {
+    .about {
+      .about-container {
+        @include flex(center, center);
+        flex-direction: row;
+        .left {
+          width: 30%;
+          min-height: 350px;
+        }
+        .right {
+          width: 65%;
+          text-align: left;
+
+          h4,
+          p,
+          h1 {
+            text-align: left;
+
+            padding-bottom: 20px;
+          }
+        }
+      }
+    }
+  }
+  #short {
+    @include flex(center, center);
+
+    .short-item {
+      width: 100%;
+      @include flex(space-around, center);
+      .left {
+        width: 40%;
+        max-height: 80vh;
+        object-fit: cover;
+      }
+      .right {
+        width: 50%;
+      }
+    }
+  }
+  #contact {
+    .contact {
+      margin: 0 auto;
+
+      .contact-items {
+        display: flex;
+        justify-content: space-around;
+        align-content: center;
+
+        // flex-direction: row;
+
+        .contact-item {
+          flex-direction: column;
+          justify-content: center;
+          flex-basis: 50%;
+          margin: 0 10px;
+        }
+      }
+    }
+  }
+  footer {
+    .footer {
+      .ftrbrand {
+        padding-bottom: 20px;
+      }
+      .social-icon {
+        .social-item {
+          i {
+          }
+        }
+      }
+    }
+  }
+}
+@media (min-width: 960px) {
+  #service {
+    .service {
+      .service-items {
+        .service-item {
+          flex-basis: 30%;
+        }
+      }
+    }
+  }
+}
